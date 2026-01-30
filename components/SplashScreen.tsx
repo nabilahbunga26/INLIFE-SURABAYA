@@ -1,0 +1,39 @@
+
+import React from 'react';
+
+const SplashScreen: React.FC = () => {
+  return (
+    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-[9999] px-6">
+      {/* Main Branding Logo */}
+      <div className="mb-10 w-full max-w-[320px] md:max-w-[400px] animate-fade-in flex justify-center">
+        <img 
+          src="data:image/png;base64,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" 
+          alt="inLife Powered by Telkomsel" 
+          className="w-full h-auto object-contain" 
+        />
+      </div>
+      
+      {/* Surabaya Text Accent */}
+      <div className="flex flex-col items-center gap-2 mb-16">
+        <div className="flex items-center gap-2">
+          <span className="w-8 h-[2px] bg-inlife-pink rounded-full"></span>
+          <h1 className="text-2xl font-black text-neutral-dark tracking-[0.3em] uppercase italic">Surabaya</h1>
+          <span className="w-8 h-[2px] bg-inlife-blue rounded-full"></span>
+        </div>
+      </div>
+
+      {/* THREE DOTS LOADING INDICATOR */}
+      <div className="flex items-center gap-4 mt-8">
+        <div className="w-4 h-4 bg-inlife-pink rounded-full animate-bounce [animation-delay:-0.3s] shadow-lg shadow-inlife-pink/20"></div>
+        <div className="w-4 h-4 bg-inlife-blue rounded-full animate-bounce [animation-delay:-0.15s] shadow-lg shadow-inlife-blue/20"></div>
+        <div className="w-4 h-4 bg-inlife-yellow rounded-full animate-bounce shadow-lg shadow-inlife-yellow/20"></div>
+      </div>
+
+      <div className="absolute bottom-16">
+         <p className="text-[10px] font-black text-neutral-medium uppercase tracking-[0.4em] opacity-40 animate-pulse">Connecting to Future</p>
+      </div>
+    </div>
+  );
+};
+
+export default SplashScreen;

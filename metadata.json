@@ -1,0 +1,7 @@
+{
+  "name": "inLife Surabaya",
+  "description": "A comprehensive mobile-first intern management platform for Telkomsel Surabaya, featuring 5 pillars: The Heart, The Vault, The Office, The Growth, and The Network.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
